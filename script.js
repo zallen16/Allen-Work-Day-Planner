@@ -6,8 +6,10 @@
 dayjs().format('hh:mm:ss a');
 $('#currentDay').text(dayjs());
 
-var dayInput = document.querySelector("#description");
+var dayInput = document.querySelector("#details");
 var saveButton = document.querySelector("#btn");
+
+dayInput.innerHTML = localStorage.getItem("input");
 
 $(document).ready(function () {
   // TODO: Add a listener for click events on the save button. This code should
@@ -20,11 +22,11 @@ $(document).ready(function () {
   saveButton.addEventListener("click", function(event) {
     event.preventDefault();
     var input = {
-      day: dayInput.ariaValueMax.trim()
+      day: dayInput.value.trim()
     };
 
-     localStorage.setItem("input", JSONstringify(input));
-
+     localStorage.setItem("input", JSON.stringify(input));
+     dayInput.innerHTML = localStorage.getItem("input")
   })
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
