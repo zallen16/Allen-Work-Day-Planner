@@ -6,4 +6,4 @@ Additional help for this assignment was given by TAs in cirriculum and tutor Jua
 
 Screenshot of app: ![Screen Shot 2023-12-05 at 12 58 34 AM](https://github.com/zallen16/Allen-Work-Day-Planner/assets/126983111/31732eab-bea2-4986-a67a-f95371a74979)
 
-URL to deployed app: 
+URL to deployed app: https://zallen16.github.io/Allen-Work-Day-Planner/
